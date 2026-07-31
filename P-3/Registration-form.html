@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <header>
+            <h1>Registration Form</h1>
+        </header>
+        <hr>
+        <main>
+            <section id="registration-form">
+                <p><b>Please fill out the form below to register:</b></p>
+<form action="/submit.php">
+    <label for="name">Name:</label>
+    <input type="text" placeholder="Enter your legal name" id="name" name="name" required>
+    <br><br>
+    <label for="phone">Phone:</label>
+    <input type="tel" placeholder="Enter Your Mobile Number" id="phone" name="phone" required>
+    <br><br>
+    <label for="email">Email:</label>
+    <input type="email" placeholder="Enter Your Email Id" id="email" name="email" required>
+    <br><br>
+    <label for="password">Password:</label>
+    <input type="password" placeholder="Enter Your Password" id="password" name="password" required>
+    <br><br>
+    <label for="confirm-password">Confirm Password:</label>
+    <input type="password" placeholder="Confirm Your Password" id="confirm-password" name="confirm-password" required>
+    <br><br>
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+        <option value="Select Gender">Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Others">Others</option>
+    </select>
+    <br><br>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+    <br><br>
+   <label>Skills:</label><br>
+
+<input type="checkbox" id="html" name="skills" value="HTML">
+<label for="html">HTML</label><br>
+
+<input type="checkbox" id="css" name="skills" value="CSS">
+<label for="css">CSS</label><br>
+
+<input type="checkbox" id="js" name="skills" value="JavaScript">
+<label for="js">JavaScript</label><br>
+
+<input type="checkbox" id="python" name="skills" value="Python">
+<label for="python">Python</label><br>
+
+<input type="checkbox" id="ai" name="skills" value="Artificial Intelligence">
+<label for="ai">Artificial Intelligence</label><br>
+
+<input type="checkbox" id="cpp" name="skills" value="C++">
+<label for="cpp">C++</label><br>
+
+<input type="checkbox" id="java" name="skills" value="Java">
+<label for="java">Java</label><br><br>
+
+<label>Experience Level:</label><br>
+<input type="radio" id="beginner" name="experience" value="Beginner">
+<label for="beginner">Beginner</label><br>
+
+<input type="radio" id="intermediate" name="experience" value="Intermediate">
+<label for="intermediate">Intermediate</label><br>
+
+<input type="radio" id="advanced" name="experience" value="Advanced">
+<label for="advanced">Advanced</label><br><br>
+<label for="about">About Yourself:</label><br>
+
+<textarea
+    id="about"
+    name="about"
+    rows="5"
+    cols="40"
+    placeholder="Write something about yourself..."
+    required>
+</textarea>
+<br><br>
+<button type="submit">Register</button>
+</form>
+</section>
+
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
